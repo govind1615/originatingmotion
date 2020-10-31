@@ -224,7 +224,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
                                       new Text(
-                                        'Parsonal Information',
+                                        'Registration Form',
                                         style: TextStyle(
                                             fontSize: 18.0,
                                             fontWeight: FontWeight.bold),
@@ -440,9 +440,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     new Flexible(
                                       child: new TextField(
                                           controller: birthday,
-                                          /* autofillHints: [
-                                            AutofillHints.birthday
-                                          ], */
                                           enabled: false,
                                           decoration: InputDecoration(
                                             hintText: "Birthday",
@@ -481,7 +478,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                   style: TextStyle(fontSize: 14),
                                   decoration: InputDecoration(
                                     hintText: "Gender",
-                                    // contentPadding: EdgeInsets.only(bottom: 2, top:5,right: 8, left: 8),
                                     filled: true,
                                     fillColor: Colors.white,
                                     disabledBorder: OutlineInputBorder(
