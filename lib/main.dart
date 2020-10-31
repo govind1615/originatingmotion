@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController location = TextEditingController();
   DateTime dob;
   bool _obscureText = true;
+  bool showAlert = false;
 
   var internetStatus = "Unknown";
   var contentmessage = "Unknown";
@@ -89,11 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
         case DataConnectionStatus.connected:
           internetStatus = "Connected to the Internet";
           contentmessage = "Connected to the Internet";
-          _showDialog(internetStatus, contentmessage, context);
+          if (showAlert) _showDialog(internetStatus, contentmessage, context);
           break;
         case DataConnectionStatus.disconnected:
           internetStatus = "You are disconnected to the Internet. ";
           contentmessage = "Please check your internet connection";
+          showAlert = true;
           _showDialog(internetStatus, contentmessage, context);
           break;
       }
