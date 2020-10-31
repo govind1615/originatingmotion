@@ -339,7 +339,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: new TextField(
                                       keyboardType: TextInputType.number,
                                       decoration: InputDecoration(
-                                        hintText: "mobile no",
+                                        hintText: "Mobile No",
                                       ),
                                     ),
                                   ),
