@@ -267,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             RegExp(r'[a-zA-Z]')),
                                       ],
                                       decoration: const InputDecoration(
-                                        hintText: "Enter Your Name",
+                                        hintText: "Enter User Name",
                                       ),
                                     ),
                                   ),
